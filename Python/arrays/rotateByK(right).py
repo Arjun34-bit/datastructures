@@ -19,3 +19,6 @@ class Rotate:
 arr=[1,2,3,4,5]
 r=Rotate([1,2,3,4,5])
 print(r.rotate())
+
+# Time Complexity is O(2N) 
+# Space Complexity is O(1)

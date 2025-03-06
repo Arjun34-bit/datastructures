@@ -23,3 +23,6 @@ def rotateArray(arr: list, k: int) -> list:
     return arr
     
 print(rotateArray([1 ,3, 6, 11, 12, 17],4))
+
+# Time Complexity is O(2N) 
+# Space Complexity is O(1)
