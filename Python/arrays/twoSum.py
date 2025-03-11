@@ -2,7 +2,7 @@
 # Better Approach
 # Time Complexity is O(N)
 # Space Complexity is O(N)
-def twoSum(arr,target):
+def twoSum(arr,target):  #for unsorted array
     if(len(arr)<=1):
         return False
     
@@ -22,7 +22,7 @@ print(twoSum(arr,11))
 
 
 
-def twoPointer(nums,target):
+def twoPointer(nums,target):        #array should be sorted
     left=0
     right=len(nums)-1
     result=[]
