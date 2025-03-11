@@ -22,6 +22,10 @@ print(twoSum(arr,11))
 
 
 
+
+# Optimal Approach
+# Time Complexity is O(NLOGN)
+# Space Complexity is O(N)
 def twoPointer(nums,target):        #array should be sorted
     left=0
     right=len(nums)-1
