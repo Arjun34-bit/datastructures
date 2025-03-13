@@ -28,7 +28,6 @@ def nsort012(arr):
     high=len(arr)-1
     
     temp=0
-    temp1=0
     while(mid<=high):
         if(arr[mid]==0):
             temp=arr[mid]
