@@ -1,3 +1,8 @@
+
+# Optimal Solution
+# Time Complexity O(N^3)=sorting O(NLOGN) + two nested loops O(N^2) + O(N) for two pointer search
+# Space Complexity : Extra space used for storing the qudrapet where k O(k)
+
 def fourSum( arr, target):
     arr.sort()
     n=len(arr)
