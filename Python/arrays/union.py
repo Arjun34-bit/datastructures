@@ -32,6 +32,7 @@ def findUnion(arr1,arr2):
         if len(result)==0 or arr1[i] !=result[-1]:
             result.append(arr1[i])
         i+=1
+    print(result)
     return len(result)
 
 
