@@ -1,4 +1,3 @@
-
 # Brute Force Approach
 def longestSubarray(arr, k):  
     count=0
@@ -14,6 +13,7 @@ def longestSubarray(arr, k):
 
 arr=[10,5,2,7,1,-10]
 print(longestSubarray(arr,15))
+
 
 
 
@@ -42,3 +42,31 @@ def longestSubarray(arr,k):
     
 arr=[10,5,2,7,1,-10]
 print(longestSubarray(arr,15))
+
+
+
+# Optimal Approach for arrays with positive numbers only
+# # Time Complexity : O(2N)
+# Space Complexity : O(N) 
+def longestSubArray(arr,k):
+    maxLen=0
+    i=0
+    j=0
+    sums=arr[0]
+    n=len(arr)
+    
+    while j<n:
+        while i<=j and  sums>k:
+            sums=sums-arr[i]
+            i+=1
+        if sums==k:
+            maxLen=max(maxLen,j-i+1)
+        j+=1
+        if(j<n):
+            sums+=arr[j]
+    return maxLen
+
+
+arr=[1,2,3,1,1,1,1]
+print(longestSubArray(arr,3))
+    
