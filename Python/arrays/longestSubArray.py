@@ -17,7 +17,8 @@ print(longestSubarray(arr,15))
 
 
 
-# Optimal Approach for negatives and zeros 
+# Optimal Approach for negatives and zeros
+# prefix with hash aprroach 
 # Time Complexity : O(N)
 # Space Complexity : O(N)
 def longestSubarray(arr,k):
@@ -46,6 +47,7 @@ print(longestSubarray(arr,15))
 
 
 # Optimal Approach for arrays with positive numbers only
+# Two Pointer Approach
 # # Time Complexity : O(2N)
 # Space Complexity : O(N) 
 def longestSubArray(arr,k):
