@@ -18,10 +18,9 @@ print(majorityElement(nums))
 
 # Optimal Approach not done 
 def majorityElement(nums):
-
-    n=len(nums)/2
+    n=len(nums)//2
     count=0
-    el=0
+    el=-1
     
     for i in range(0,len(nums)):
         if count==0:
@@ -31,12 +30,18 @@ def majorityElement(nums):
             count+=1
         else:
             count-=1
+            
     
     count1=0
-    for j in range(0,len(nums)-1):
+    for j in range(0,len(nums)):
         if nums[j]==el:
             count1+=1
+            
 
-    if count>n:
+    if count1>n:
         return el
-    return -1
+    else:
+        return -1
+            
+arr=[3,2,3]
+print(majorityElement(arr))
