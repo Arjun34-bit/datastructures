@@ -5,7 +5,7 @@ class BankAccount():
         self.balance=balance
     
     def check_balance(self):
-        print("Your current balance is : ",self.balance)
+        print("Your current balance is now : ",self.balance)
     
     def deposit(self,amt):
         if(amt<0):
