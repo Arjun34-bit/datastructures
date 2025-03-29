@@ -3,7 +3,6 @@ import sys
 def maxVal(arr,low,high):
 
     maxVals=-sys.maxsize-1
-    index=0
 
     while low<=high:
 
