@@ -1,3 +1,6 @@
+
+# Time and Space Complexity is O(n)
+
 class Solution:
     def __init__(self):
         self.result=[]
