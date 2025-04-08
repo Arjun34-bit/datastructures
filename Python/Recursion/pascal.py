@@ -1,5 +1,5 @@
 #Time Complexity : O(n)
-#Space Complexity : o(n)
+#Space Complexity : O(n)
 
 class Solution:
 	def pascal(self,result,row,col,ans):
