@@ -1,3 +1,6 @@
+#Time Complexity : O(n)
+#Space Complexity : O(n)
+
 def nthFibonacci(n: int,memo={}) -> int:
     if n in memo:
         return memo[n]
