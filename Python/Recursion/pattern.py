@@ -9,13 +9,10 @@ class Solution:
         if n>self.result[0]:
             return
         self.result.append(n)
-        # print(n,end=" ")
         self.pattern1(n+5)
                
     def pattern(self, n):
-        # code here
         self.result.append(n)
-        # print(n,end=" ")
         if n<=0:
             self.pattern1(n+5)
             return self.result
