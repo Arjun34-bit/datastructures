@@ -1,3 +1,6 @@
+#Time Complexity : O(n)
+#Space Complexity : O(1)
+
 def factorial(sums,n):
     if n==0:
         return sums
