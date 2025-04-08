@@ -1,3 +1,6 @@
+#Time Complexity : O(n)
+#Space Complexity : o(n)
+
 class Solution:
 	def pascal(self,result,row,col,ans):
 		if col==(row):
