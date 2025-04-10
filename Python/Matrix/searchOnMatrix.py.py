@@ -6,7 +6,6 @@ class searchMatrix1:
         low=0
         high=len(arr)-1
         
-        
         while low<=high:
             mid=low+(high-low)//2
             
