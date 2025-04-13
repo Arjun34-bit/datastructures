@@ -26,49 +26,39 @@ def setMatrix0(mat):
     
 
 
-def setZeroes( matrix):
+def setZeroes(matrix):
+    row = len(matrix)
+    col = len(matrix[0])
 
-        row=len(matrix)
-        col=len(matrix[0])
-        
-        # r=[0]*row
-        # c=[0]*col
+    col0 = 1  # To check separately if first column needs to be zero
 
-        #Hash Arrays matrix[0][....] matrix[...][0]
-
-        col0=1
-        
-        for i in range(0,row):
-            for j in range(0,col):
-                if matrix[i][j]==0:
-                   matrix[i][0]=0
-                   if (j!=0):
-                       matrix[0][j]=0
-                   else:
-                       col0=0
+    # Step 1: Mark rows and columns
+    for i in range(row):
+        for j in range(col):
+            if matrix[i][j] == 0:
+                matrix[i][0] = 0  # Mark the row
+                if j != 0:
+                    matrix[0][j] = 0  # Mark the column
                 else:
-                    continue
-                
-        for i in range(1,row):
-            for j in range(1,col):
-                if( matrix[i][j] !=0 ) :
-                    if (matrix[0][j] == 0 or matrix[i][j]==0):
-                        matrix[i][j]=0
-                    else:
-                        continue
-                else:
-                    continue
+                    col0 = 0  # First column will need to be 0
 
-        if(col0==0):
-            for i in range(0,row):
-                matrix[i][0]=0
+    # Step 2: Set matrix[i][j] = 0 if either its row or column was marked
+    for i in range(1, row):
+        for j in range(1, col):
+            if matrix[i][0] == 0 or matrix[0][j] == 0:
+                matrix[i][j] = 0
 
-        if(matrix[0][0]==0):
-            for j in range(0,col):
-                matrix[0][j]=0
-                    
-                    
-        return matrix
-    
-mat=[[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+    # Step 3: Handle the first row
+    if matrix[0][0] == 0:
+        for j in range(col):
+            matrix[0][j] = 0
+
+    # Step 4: Handle the first column
+    if col0 == 0:
+        for i in range(row):
+            matrix[i][0] = 0
+
+    return matrix
+   
+mat=[[1,2,3,4],[5,0,7,8],[0,10,11,12],[13,14,15,0]]
 print(setZeroes(mat))
