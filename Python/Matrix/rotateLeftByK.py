@@ -38,7 +38,7 @@ def rotateByK(mat,k):
     while low<=right:
         reverse(mat[low],k+1)
         low+=1
-    return mat
+        return mat
     
     
     
