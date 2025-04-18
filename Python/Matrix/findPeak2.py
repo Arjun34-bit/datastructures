@@ -39,3 +39,9 @@ class Solution(object):
             else:
                 low=mid+1
         return [-1,-1]
+
+
+obj=Solution()
+
+mat=[[1,2,3],[5,4,6],[4,5,3]]
+print(obj.findPeakGrid(mat))
