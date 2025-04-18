@@ -4,8 +4,6 @@ def findPeak(arr):
 
         maxVal=-100
         idx=0
-        
-        # print(arr)
 
         while low<=high:
             mid=low+(high-low)//2
