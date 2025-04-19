@@ -16,6 +16,9 @@ class LinearSearch():
 
 
     def books(self,books,students):
+        if(len(books)<students):
+            return -1
+        
         low=max(books)
         high=sum(books)
         
@@ -44,6 +47,9 @@ class BinarySearch():
 
 
     def books(self,books,students):
+        if(len(books)<students):
+            return -1
+        
         low=max(books)
         high=sum(books)
 
