@@ -18,6 +18,9 @@ class LinearSearch():
     def books(self,books,students):
         if(len(books)<students):
             return -1
+
+        if(students==1):
+            return sum(books)
         
         low=max(books)
         high=sum(books)
@@ -50,6 +53,9 @@ class BinarySearch():
         if(len(books)<students):
             return -1
         
+        if(students==1):
+            return sum(books)
+        
         low=max(books)
         high=sum(books)
 
@@ -62,7 +68,7 @@ class BinarySearch():
                 low=mid+1
             else:
                 high=mid-1
-        return low                          #this concent is called polarity
+        return low                          #this concept is called polarity
 
 
 
