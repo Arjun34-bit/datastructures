@@ -47,7 +47,6 @@ class BinaryAppraoch():
     def aggressiveCows(self,arr,k):
         low=1
         high=arr[-1]-arr[0]
-        result=0
 
         while low<=high:
             mid=low+(high-low)//2
