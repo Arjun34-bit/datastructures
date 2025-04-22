@@ -37,7 +37,6 @@ class BinarySearch:
         nBouquets=0
         
         for blooms in range(0,n):
-            # print(nBouquets)
             if bloomDays[blooms]<=day:
                 adjFlowers+=1
             else:
