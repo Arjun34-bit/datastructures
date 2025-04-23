@@ -53,12 +53,41 @@ def reverseLL(head):
     
     while current:
         nextNode=current.next
-        current.next=prev
+        current.next=prev   
         prev=current
         current=nextNode
         
         
     return prev
+
+
+def isPalindrome(head):
+    first=head
+    
+    slow=head
+    fast=head
+    
+    while (fast.next != None and fast.next.next != None):  # finding the middle node TC:O(N/2)
+        slow=slow.next
+        fast=fast.next.next
+        
+        
+    mid=slow.next
+    
+    newHead=reverseLL(mid)    #  reversing the second half TC:O(N/2)
+    
+    second=newHead
+    
+    while second != None:
+        if first.data != second.data:
+            reverseLL(newHead)       #  again reversing the second half TC:O(N/2) 
+            return False           #  we need to rearrange the data structure if we altered the original data structure it is a good practice
+            
+        first=first.next
+        second=second.next
+        
+    reverseLL(newHead)        #  again reversing the second half TC:O(N/2)
+    return True
         
 arr=[15,2,3,4,5,6]
 headVal=convertToLL(arr)
@@ -69,4 +98,8 @@ print("Length of Linked List is ",lengthOfLL(headVal))
 newNode=reverseLL(headVal)
 print("Traversing Linked List after reversing")
 print(traverseInLL(newNode))
+
+newArr=[1,2,2,3]
+palinLL=convertToLL(newArr)
+print(f"Checking wheather a linked List {newArr} is palindrome or not :",isPalindrome(palinLL))  # Time Complexity is O(2N) and Space Complexity is O(1)
 # print(headVal)
