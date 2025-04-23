@@ -62,6 +62,10 @@ def reverseLL(head):
 
 
 def isPalindrome(head):
+
+    #learnt slow and fast pointer approach
+
+
     first=head
     
     slow=head
