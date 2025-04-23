@@ -64,5 +64,5 @@ obj=LinearSearch()
 obj1=BinarySearch()
 arr=[1,2,1]
 d=2
-print("Linear Search ",obj.weights(arr,d))
-print("Binary Search ",obj1.weights(arr,d))
+print("Linear Search",obj.weights(arr,d))
+print("Binary Search",obj1.weights(arr,d))

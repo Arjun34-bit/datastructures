@@ -44,6 +44,21 @@ def lengthOfLL(head):
         mover=mover.next
         
     return count
+
+
+def reverseLL(head):
+    current=head
+    prev=None
+    
+    
+    while current:
+        nextNode=current.next
+        current.next=prev
+        prev=current
+        current=nextNode
+        
+        
+    return prev
         
 arr=[15,2,3,4,5,6]
 headVal=convertToLL(arr)
@@ -51,4 +66,7 @@ print("Searching for target element in Linked List ",searchInLL(headVal,6))
 print("Traversing Linked List",end=" ")
 print(traverseInLL(headVal))
 print("Length of Linked List is ",lengthOfLL(headVal))
+newNode=reverseLL(headVal)
+print("Traversing Linked List after reversing")
+print(traverseInLL(newNode))
 # print(headVal)
