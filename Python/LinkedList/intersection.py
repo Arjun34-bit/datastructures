@@ -1,3 +1,6 @@
+#Partially done
+
+
 class Node:
     def __init__(self,data):
         self.data=data
@@ -34,7 +37,7 @@ def intersection(head1,head2):
         
     temp=head2
     while temp != None:
-        if mp[temp] in mp:
+        if mp[temp]:
             return temp.data
         temp=temp.next
         
