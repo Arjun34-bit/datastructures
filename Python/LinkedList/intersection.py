@@ -1,6 +1,3 @@
-#Partially done
-
-
 class Node:
     def __init__(self,data):
         self.data=data
@@ -44,7 +41,7 @@ def intersection(head1,head2):
     return -1
         
 
-def intersectPoint(head1, head2):      #return value will be None may be because of address changing     
+def intersectPoint(head1, head2):      #return value will be None may be because of address changing         
     if(head1==None and head2==None):
         return None
         
@@ -66,5 +63,37 @@ def intersectPoint(head1, head2):      #return value will be None may be because
             
     return temp1
         
+def union(head1,head2):
+    s1=set()
+    s2=set()
+    
+    temp1=head1
+    temp2=head2
+    
+    while temp1:
+        s1.add(temp1.data)
+        temp1=temp1.next
+        
+    while temp2:
+        s2.add(temp2.data)
+        temp2=temp2.next
+        
+        
+        
+    u=s1.union(s2)
+    u_list=list(u)
+    
+    u_list.sort()
+    
+    newHead=Node(u_list[0])
+    mover=newHead
+    
+    for i in range(1,len(u_list)):
+        temp=Node(u_list[i])
+        mover.next=temp
+        mover=temp
+        
+    return newHead
+
 # print(intersection(head1,head2))
 print(intersectPoint(head1,head2))     #TC:O(n1+n2)  SC:O(1)
