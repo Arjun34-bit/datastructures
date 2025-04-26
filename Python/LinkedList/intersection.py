@@ -67,4 +67,4 @@ def intersectPoint(head1, head2):      #return value will be None may be because
     return temp1
         
 # print(intersection(head1,head2))
-print(intersectPoint(head1,head2))
+print(intersectPoint(head1,head2))     #TC:O(n1+n2)  SC:O(1)
