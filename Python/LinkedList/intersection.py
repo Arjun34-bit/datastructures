@@ -43,5 +43,28 @@ def intersection(head1,head2):
         
     return -1
         
+
+def intersectPoint(head1, head2):      #return value will be None may be because of address changing     
+    if(head1==None and head2==None):
+        return None
         
-print(intersection(head1,head2))
+    temp1=head1
+    temp2=head2
+    
+    while (temp1 != temp2):
+        temp1=temp1.next
+        temp2=temp2.next
+        
+        if(temp1==temp2):
+            return temp1
+            
+        if(temp1==None):
+            temp1=head2
+            
+        if(temp2==None):
+            temp2=head1
+            
+    return temp1
+        
+# print(intersection(head1,head2))
+print(intersectPoint(head1,head2))
