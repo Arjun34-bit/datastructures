@@ -40,7 +40,9 @@ def median(a,b):
         else:
             low=mid1+1
     return 0
-    
+
+
+#TC:O(min(logN,logM)) and SC:O(1)
     
 a = [-5, 3, 6, 12, 15]
 b = [-12, -10, -6, -3, 4, 10]
