@@ -1,6 +1,6 @@
 import math
 
-class LinearSearch:
+class SmallestDivisor:
     def calculateThreshold(self,nums,divisor):
         currSum=0
         
@@ -10,7 +10,7 @@ class LinearSearch:
             
 
 
-    def smallestDivisor(self,nums,threshold):
+    def smallestDivisoriLinear(self,nums,threshold):
         low=min(nums)
         high=max(nums)
         
@@ -20,9 +20,24 @@ class LinearSearch:
                 return divisors
                 
         return -1
+    
+    def smallestDivisorBinary(self,nums,threshold):
+        low=min(nums)
+        high=max(nums)
+        
+        while low<=high:
+            mid=low+(high-low)//2
+            
+            if(self.calculateThreshold(nums,mid)<=threshold):
+                high=mid-1
+            else:
+                low=mid+1
+                
+        return low
 
 
-obj=LinearSearch()    
+obj=SmallestDivisor()    
 arr=[1,2,5,9]
 threshold=6
-print(obj.smallestDivisor(arr,threshold))
+print("Linear Search",obj.smallestDivisoriLinear(arr,threshold))
+print("Binary Search",obj.smallestDivisorBinary(arr,threshold))
