@@ -39,5 +39,5 @@ class SmallestDivisor:
 obj=SmallestDivisor()    
 arr=[1,2,5,9]
 threshold=6
-print("Linear Search",obj.smallestDivisoriLinear(arr,threshold))
-print("Binary Search",obj.smallestDivisorBinary(arr,threshold))
+print("Linear Search",obj.smallestDivisoriLinear(arr,threshold))    #O(N * N)
+print("Binary Search",obj.smallestDivisorBinary(arr,threshold))     #O(N * log(max(nums)))
