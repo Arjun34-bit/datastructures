@@ -10,7 +10,7 @@ class SmallestDivisor:
             
 
 
-    def smallestDivisoriLinear(self,nums,threshold):
+    def smallestDivisoriLin(self,nums,threshold):
         low=min(nums)
         high=max(nums)
         
@@ -21,7 +21,7 @@ class SmallestDivisor:
                 
         return -1
     
-    def smallestDivisorBinary(self,nums,threshold):
+    def smallestDivisorBin(self,nums,threshold):
         low=min(nums)
         high=max(nums)
         
@@ -39,5 +39,5 @@ class SmallestDivisor:
 obj=SmallestDivisor()    
 arr=[1,2,5,9]
 threshold=6
-print("Linear Search",obj.smallestDivisoriLinear(arr,threshold))    #O(N * N)
+print("Linear Search",obj.smallestDivisoriLinear(arr,threshold))    #O(N * max(nums))
 print("Binary Search",obj.smallestDivisorBinary(arr,threshold))     #O(N * log(max(nums)))

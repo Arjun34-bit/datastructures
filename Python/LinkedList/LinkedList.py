@@ -128,7 +128,7 @@ print(traverseInLL(newNode))
 
 newArr=[1,2,2,3]
 palinLL=convertToLL(newArr)
-print(f"Checking wheather a linked List {newArr} is palindrome or not :",isPalindrome(palinLL))  # Time Complexity is O(2N) and Space Complexity is O(1)
+print(f"Checking wheather a linked List {newArr} is palindrome or not :",isPalindrome(palinLL)) # Time Complexity is O(2N) and Space Complexity is O(1)
 h=convertToLL([1,2,4])
 print("Inserting key after middle",insertInMiddle(h,3))
 # print(headVal)
