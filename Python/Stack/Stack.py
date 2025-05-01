@@ -14,7 +14,7 @@ class MyStack:
     
 
 
-s=MyStack()
+s=MyStack()    #TC : O(1) and SPC : O(1)
 s.push(10)
 s.push(20)
 s.push(30)

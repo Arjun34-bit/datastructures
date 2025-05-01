@@ -25,7 +25,7 @@ class TwoStacks:
     
 
 
-s=TwoStacks()
+s=TwoStacks()    #TC : O(1) and SPC : O(1)
 s.push1(10)
 s.push1(20)
 s.push2(30)
