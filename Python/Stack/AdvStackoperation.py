@@ -24,10 +24,19 @@ class Stack:
             return -1
         return self.arr[-1]
 
-    def getMin(self):
+    def getMin(self):   
         if len(self.arr)==0:
             return -1
         return self.mini[-1]
     
 
 s=Stack()
+s.push(10)
+s.push(20)
+s.push(30)
+s.push(40)
+
+s.pop()
+
+print("Peek Element in Stack",s.peek())
+print("Minimum Element in Stack",s.getMin())
