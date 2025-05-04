@@ -25,4 +25,4 @@ def nextGreaterEl(arr):
         
         
 arr=[1,3,2,4]
-print(nextGreaterEl(arr))    #  TC:O(2n + 2n)  ~ TC:O(n)  and SC:O(n)
+print(nextGreaterEl(arr))    #  TC:O(2n + 2n)  ~ TIME COMPLEXITY:O(n)  and SPACE COMPLEXITY:O(n)

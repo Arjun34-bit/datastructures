@@ -24,4 +24,4 @@ def nextGreaterElements(nums):
         
         
 arr=[1,2,1]
-print(nextGreaterElements(arr))        #  TC:O(2n + 2n)  ~ TIME COMPLEXITY:O(n)  and SPACE COMPLEXITYC:O(n)
+print(nextGreaterElements(arr))        #  TC:O(2n + 2n)  ~ TIME COMPLEXITY:O(n)  and SPACE COMPLEXITY:O(n)
