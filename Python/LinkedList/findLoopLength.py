@@ -1,4 +1,4 @@
-def countNodesInLoop(self, head):
+def countNodesInLoop(head):     #TC:O(N) and SC:O(N)
     temp=head
 
     mp={}
@@ -18,7 +18,7 @@ def countNodesInLoop(self, head):
         
     return 0
     
-def findLength(slow,fast):
+def findLength(slow,fast):      #TC:O(N) and SC:O(1)
     count=1
     fast=fast.next
     
