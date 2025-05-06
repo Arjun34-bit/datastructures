@@ -18,12 +18,12 @@ def detectLoop(head):    #TC:O(N) and SC:O(1)
     slow=head
     fast=head
     
-    while slow.next.next != None or fast.next != None:
-        
-        if slow==fast:
-            return True
+    while fast != None and fast.next != None:
             
         slow=slow.next
-        fast=fast.next
+        fast=fast.next.next
+
+        if slow==fast:
+            return True
         
     return False
