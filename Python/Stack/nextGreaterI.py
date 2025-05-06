@@ -10,7 +10,6 @@ def nextGreaterEl(arr):
     for i in range(n-1,-1,-1):
         
         while (st and st[-1] <= arr[i]):
-            print("rm")
             st.pop()
             
         if i<n:
@@ -24,5 +23,5 @@ def nextGreaterEl(arr):
     return nge
         
         
-arr=[1,3,2,4]
+arr=[3,8,5,2,25]
 print(nextGreaterEl(arr))    #  TC:O(2n + 2n)  ~ TIME COMPLEXITY:O(n)  and SPACE COMPLEXITY:O(n)
