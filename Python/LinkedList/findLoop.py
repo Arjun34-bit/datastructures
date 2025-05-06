@@ -4,10 +4,10 @@ def findLoop(head):    #TC:O(N) and SC:O(N)
     mp={}
     
     while temp != None:
-        mp[temp]=1
-        
         if temp in mp:
             return True
+        
+        mp[temp]=1
             
         temp=temp.next
         
