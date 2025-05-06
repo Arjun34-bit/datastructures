@@ -1,4 +1,4 @@
-def findLoop(head):
+def findLoop(head):    #TC:O(N) and SC:O(N)
     temp=head
     
     mp={}
@@ -14,7 +14,7 @@ def findLoop(head):
     return False
     
     
-def detectLoop(head):
+def detectLoop(head):    #TC:O(N) and SC:O(1)
     slow=head
     fast=head
     
