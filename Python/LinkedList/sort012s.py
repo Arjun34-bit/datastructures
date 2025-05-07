@@ -34,7 +34,7 @@ class Node:
         self.data=data
         self.next=None
 
-def segregate(head): 
+def segregate(head):   # TC:O(N) and SC:O(1)
     temp=head
     
     zeroHead=Node(-1)
