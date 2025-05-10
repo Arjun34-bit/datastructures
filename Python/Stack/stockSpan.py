@@ -12,7 +12,7 @@ def stockSpan(arr):
         result.append(span)
         st.append([arr[i],span])
         
-    return result
+    return result   
     
     
 arr=[100,80,60,70,60,75,85]   #  TC : O(N) and SC: O(N)
