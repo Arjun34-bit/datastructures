@@ -1,4 +1,4 @@
-def stockSpan(arr):        
+def stockSpan(arr):    
     span=1
     st=[]
     
@@ -15,5 +15,5 @@ def stockSpan(arr):
     return result
     
     
-arr=[100,80,60,70,60,75,85]
+arr=[100,80,60,70,60,75,85]   #  TC : O(N) and SC: O(N)
 print(stockSpan(arr))
