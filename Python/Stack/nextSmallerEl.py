@@ -22,5 +22,5 @@ def nextSmallerEl( arr, n):
     return nse
 
 
-arr=[3,8,5,2,25]
+arr=[100,80,60,70,60,75,85]
 print(nextSmallerEl(arr,len(arr)))

@@ -1,4 +1,4 @@
-def seggregate(head):   #Brute Force Approach
+def seggregate(head):   #Brute Force Approach   TC: O(2N) and SC: O(1)
     temp=head
     temp1=head
     count0=0
