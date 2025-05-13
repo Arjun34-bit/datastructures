@@ -60,7 +60,7 @@ def largestAreaInMatrix(arr):
 
     
     
-arr=[60,20,50,40,10,50,60]
+arr=[[0, 1, 1, 0],[1, 1, 1, 1],[1, 1, 1, 1],[1, 1, 0, 0]]
 
 
-print(largestArea(arr))
+print(largestAreaInMatrix(arr))
