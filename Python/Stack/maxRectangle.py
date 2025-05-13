@@ -63,4 +63,4 @@ def largestAreaInMatrix(arr):
 arr=[[0, 1, 1, 0],[1, 1, 1, 1],[1, 1, 1, 1],[1, 1, 0, 0]]
 
 
-print(largestAreaInMatrix(arr))
+print(largestAreaInMatrix(arr))    # requires a prequisite fucntion of calculate largestAreaInHistogram
