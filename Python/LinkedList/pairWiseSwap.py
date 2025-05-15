@@ -43,5 +43,7 @@ def traverseInLL(head):
         mover=mover.next
 
 
+
+
 h=pairWiseSwap(newHead)
 print(traverseInLL(h))
