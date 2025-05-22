@@ -1,4 +1,4 @@
-class Solution:
+class Solution:    #Brute Force Solution    TC:O(3N) and SC:O(1)
     def reverse(self,head):
         curr=head
         prev=None
@@ -40,7 +40,7 @@ class Solution:
 
 
 
-class Solution:     # Optimal Approach Used Backtracking
+class Solution:     # Optimal Approach Used Backtracking  TC:O(N) and SC:O(N)
     def helper(self,temp):
         if temp == None:
             return 1
