@@ -3,7 +3,13 @@ class Node():
     def __init__(self,data):
         self.data=data
         self.next=None
-        
+
+
+def negZero(head):
+        while head and head.data == 0:
+            head = head.next
+        return head
+
 def convertToLL(arr):
     head=Node(arr[0])
     mover=head
@@ -35,12 +41,12 @@ def reverse(head):
 
 
 
-def addTwoLL(head1,head2):
-    newHead1=head1
-    newHead2=head2
+def addTwoLL(num1,num2):
+    newHead1=num1
+    newHead2=num2
     
-    temp1=self.reverse(newHead1)
-    temp2=self.reverse(newHead2)
+    temp1=reverse(newHead1)
+    temp2=reverse(newHead2)
     
     result=Node(-1)
     ans=result
@@ -71,18 +77,15 @@ def addTwoLL(head1,head2):
         if temp2:
             temp2=temp2.next
             
-    # print(carry)
-        
     if carry != 0:
         newNode=Node(carry)
-        temp=self.reverse(result.next)
+        temp=reverse(result.next)
         newNode.next=temp
-        if newNode.data == 0:
-            return newNode.next
-        return newNode
+        return negZero(newNode)
         
-    return self.reverse(result.next)
-    
+        
+    revResult=reverse(result.next)
+    return negZero(revResult)  
     
 def traverseInLL(head):
     mover=head
