@@ -1,3 +1,5 @@
+# TC:0(3N) ~ O(N)
+
 def reverse(self,head):
     curr=head
     prev=None
