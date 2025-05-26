@@ -1,26 +1,21 @@
-def candy(s):
-    arr=[]
-    result=[]
+def Reduced_String(k, s):
+    if k == 1:
+        return ""
     
-    for i in range(0,len(s)):
-        arr.append(s[i])
-        
-    for j in range(0,len(arr)):
-        last=len(arr) - 2 - j   
-        for k in range(j+1,k):
-            if arr[j] != arr[k]:
-                if result[-1] != arr[j]:
-                    result.append(arr[j])
-            else:
-                continue
-            
-    print(arr)
-            
-    return result
-                
-            
-    
-    
+    stack = []  
 
-s="geeks"  
-print(candy(s))
+    for char in s:
+        if stack and stack[-1][0] == char:
+            stack[-1][1] += 1
+            if stack[-1][1] == k:
+                stack.pop()  
+        else:
+            stack.append([char, 1])
+    
+    # Rebuild the reduced string
+    return "".join(char * count for char, count in stack)
+    
+    
+s="geeeksforgeeeks"
+k=3
+print(Reduced_String(k,s))
