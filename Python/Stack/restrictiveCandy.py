@@ -12,7 +12,6 @@ def Reduced_String(k, s):
         else:
             stack.append([char, 1])
     
-    # Rebuild the reduced string
     return "".join(char * count for char, count in stack)
     
     
