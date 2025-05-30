@@ -18,28 +18,3 @@ class MyQueue:
 
 
 #From Queue Collection
-from queue import Queue
-
-
-def push(x):
-
-    global queue_1
-    global queue_2
-    # code here
-    
-    queue_2.put(x)
-    
-    while not queue_1.empty():
-        queue_2.put(queue_1.get())
-        
-    queue_1,queue_2=queue_2,queue_1
-
-
-def pop():
-
-    global queue_1
-    global queue_2
-    
-    if not queue_1.empty():
-        return queue_1.get()
-    return -1
