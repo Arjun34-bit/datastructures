@@ -23,3 +23,35 @@ def compute(head):
         temp=temp.next          #15
         
     return rHead
+
+
+class Solution:
+    def reverse(self,head):
+            curr=head
+            prev=None
+            
+            while curr:
+                temp=curr.next
+                curr.next=prev
+                prev=curr
+                curr=temp
+                
+            return prev
+        
+    def compute(self,head):
+        #Your code here
+        
+        rHead=self.reverse(head)
+        
+        
+        max_so_far = rHead.data
+        curr = rHead
+        while curr and curr.next:
+            if curr.next.data < max_so_far:
+                curr.next = curr.next.next
+            else:
+                curr = curr.next
+                max_so_far = curr.data
+                
+
+        return self.reverse(rHead)
