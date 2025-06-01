@@ -25,7 +25,7 @@ def compute(head):
     return rHead
 
 
-class Solution:         #TC:O(N)   and    O(1)
+class Solution:         #Time ComplexityC:O(N)   and    Space Complexity:O(1)
     def reverse(self,head):
             curr=head
             prev=None
