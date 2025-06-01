@@ -25,7 +25,7 @@ def compute(head):
     return rHead
 
 
-class Solution:
+class Solution:         #TC:O(N)   and    O(1)
     def reverse(self,head):
             curr=head
             prev=None
