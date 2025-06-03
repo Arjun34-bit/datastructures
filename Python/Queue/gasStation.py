@@ -1,4 +1,4 @@
-def startStation(gas, cost):        
+def startStation(gas, cost):       # Time Complexity : O(N)   Space Complexity : O(1)      
     if sum(gas) < sum(cost):
         return -1
     
