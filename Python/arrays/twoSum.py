@@ -17,7 +17,7 @@ def twoSum(arr,target):  #for unsorted array
     
     
 arr=[1,2,3,4,5,6]
-print(twoSum(arr,11))
+# print(twoSum(arr,11))
 
 
 
@@ -43,4 +43,4 @@ def twoPointer(nums,target):        #array should be sorted
             right-=1
     return result
 
-# print(twoPointer([1,2,3,4,5,6,7,8,9],10))
+print(twoPointer([1,2,3,4,5,6,7,8,9],10))
