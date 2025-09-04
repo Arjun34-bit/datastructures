@@ -16,6 +16,29 @@ print(majorityElement(nums))
 
 
 
+#My Own Approach
+def majorityElement(self, arr):
+    #code here
+    n=len(arr) / 2
+    maxCount=1
+    posResult = arr[0]
+    currEl=arr[0]
+    
+    tempCount = 1
+    
+    for i in range(1,len(arr)):
+        if arr[i] == currEl or arr[i] == posResult:
+            tempCount +=1
+            maxCount += 1
+            posResult = arr[i]
+        else:
+            tempCount = 1
+            currEl = arr[i]
+            
+    if maxCount > n:
+        return posResult
+    return -1
+
 # Optimal Approach not done 
 def majorityElement(nums):
     n=len(nums)//2

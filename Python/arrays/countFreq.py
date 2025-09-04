@@ -4,6 +4,7 @@ def countFreq(a):
         mp[a[i]]=mp.get(a[i],0)+1
         
     result=[]
+    print(mp)
     for i in range(1,len(a)+1):
         if i not in mp:
             result.append(0)
