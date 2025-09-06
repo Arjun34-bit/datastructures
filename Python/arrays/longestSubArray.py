@@ -46,6 +46,7 @@ print(longestSubarray(arr,15))
 
 
 
+
 # Optimal Approach for arrays with positive numbers only
 # Two Pointer Approach
 # # Time Complexity : O(2N)
@@ -58,7 +59,7 @@ def longestSubArray(arr,k):
     n=len(arr)
     
     while j<n:
-        while i<=j and  sums>k:
+        while i<=j and sums>k:
             sums=sums-arr[i]
             i+=1
         if sums==k:
