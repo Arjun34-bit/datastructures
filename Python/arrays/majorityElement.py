@@ -8,7 +8,7 @@ def majorityElement(nums):
                 mp[nums[i]]=mp.get(nums[i],0)+1
         for key, value in mp.items():
             if value>=n:
-                return key
+                return key  
         
       
 nums=[3,2,3]
