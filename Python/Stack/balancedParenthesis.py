@@ -23,4 +23,4 @@ def isBalanced(s):
     return False
     
 s="()"
-print(isBalanced(s))
+print(isBalanced(s))            #solved problem and saved
