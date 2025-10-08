@@ -3,7 +3,7 @@ def knows(a,b,mat):
         return True
     else:
         return False
-def celebrity(mat):
+def celebrity(mat):     #Celebrity Problem Solved
 
     n=len(mat)
 
