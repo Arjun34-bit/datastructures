@@ -1,7 +1,7 @@
 def largestArea(arr):
     n=len(arr)
     leftSmall=[0]*n
-    rightSmall=[0]*n
+    rightSmall=[0]*n     #Largest Histogram Solved
     
     st=[]
     
