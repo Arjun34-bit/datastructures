@@ -93,6 +93,8 @@ class LinkedList {
   }
 }
 
+#Revising Linked List Topics
+
 const linkedList = new LinkedList();
 linkedList.addFirst(5);
 linkedList.addFirst(10);
