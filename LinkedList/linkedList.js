@@ -95,6 +95,8 @@ class LinkedList {
 
 #Revising Linked List Topics
 
+#Linked List Optimized version done
+
 const linkedList = new LinkedList();
 linkedList.addFirst(5);
 linkedList.addFirst(10);
