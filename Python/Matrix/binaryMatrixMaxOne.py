@@ -41,3 +41,5 @@ def findMaxRow(mat, N):
 mat=[[0, 0, 1],[0, 1, 1],[0, 0, 0]]
 print(findMaxRow(mat,3))
 
+#BinaryMatrix Done
+
