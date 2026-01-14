@@ -67,3 +67,5 @@ stalls=[1,2,4,8,9]
 cows=3
 print("Linear Approach ",obj.aggressiveCows(stalls,cows))
 print("Binary Approach ",obj1.aggressiveCows(stalls,cows))
+
+#Binary Search used
